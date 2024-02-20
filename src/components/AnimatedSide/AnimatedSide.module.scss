@@ -1,0 +1,52 @@
+:root{
+    --step1:linear-gradient(135deg,pink,red);
+    --step1-c:white;
+    --step2:linear-gradient(135deg,rgb(255, 208, 192),rgb(0, 255, 255));
+    --step2-c:rgba(65, 44, 223, 0.722);
+    --step3:linear-gradient(135deg,rgb(223, 69, 128),rgb(3, 38, 34));
+    --step3-c: rgba(227, 226, 235, 0.722);
+    --step4:linear-gradient(135deg,rgb(234, 94, 56),rgb(252, 252, 252));
+    --step4-c: rgba(208, 60, 60, 0.991);
+
+}
+
+
+@keyframes changeColors {
+    0%{
+        background: var(--step1);
+        color: var(--step1-c);
+    }
+    25%{
+        background: var(--step2);
+        color: var(--step2-c);
+
+    }
+    50%{
+        background: var(--step3);
+        color: var(--step3-c);
+
+    }
+    75%{
+        background: var(--step4);
+        color: var(--step4-c);
+
+    }
+}
+
+
+
+
+
+
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    animation: changeColors 6s ease-in-out 0s infinite alternate-reverse;
+    font-family:sans-serif;
+    h1{
+        font-size: 100px;
+        font-weight: 900;
+    }
+}

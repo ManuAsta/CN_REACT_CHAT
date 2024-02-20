@@ -1,0 +1,91 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .photo-section{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        object-fit: cover;
+    }
+}
+
+.form{
+  height: 70%;
+
+
+  h3{
+    color: var(--font-color);
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  input{
+    margin-bottom: 20px;
+    border: none;
+    width: 70%;
+    box-shadow: var(--dark-bs);
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 0 5px;
+    border-radius: 5px;
+
+    &:focus{
+        outline:2px solid rgba(217, 27, 238, 0.586);
+    }
+  }
+
+  label{
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: var(--dark-bs);
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: var(--font-color);
+    color: white;
+
+    &:active{
+        transform: scale(0.98);
+    }
+  }
+
+  button{
+    padding: 5px 10px;
+    color: var(--font-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid grey;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color: var(--font-color);
+        color: white;
+    }
+  }
+}
+
+
+.photo{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(128, 128, 128, 0.809);
+    position: relative;
+
+}
+
+
